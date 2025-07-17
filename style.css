@@ -68,7 +68,6 @@ nav {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1rem;
 }
 
 nav.scrolled {
@@ -129,8 +128,8 @@ nav.scrolled {
     height: 1rem;
     position: relative;
     align-items: center;
+    color: var(--text-color);
 }
-
 
 .nav__menu {
     width: 100%;
@@ -652,6 +651,7 @@ nav.scrolled {
 .footer__coulmn input {
     padding: 1rem;
     border-radius: .5rem;
+    width: 100%;
     border: 1px solid var(--secondary-color);
     background-color: transparent;
 }
@@ -684,7 +684,7 @@ nav.scrolled {
     transition: opacity 0.5s ease;
 }
 
-.loading-screen p{
+.loading-screen p {
     color: var(--text-color);
     font-size: 1rem;
 }
@@ -802,7 +802,6 @@ nav.scrolled {
 }
 
 @media (width < 480px) {
-
     .nav__container {
         padding-inline: .5rem;
     }
@@ -812,7 +811,7 @@ nav.scrolled {
     }
 
     .nav__menu span {
-        width: 2rem;
+        width: 1.7rem;
     }
 
     .search {
@@ -821,6 +820,19 @@ nav.scrolled {
 
     .nav__links {
         width: 50%;
+    }
+
+    .toggle button {
+        padding: .5rem;
+    }
+
+    .toggle i {
+        font-size: 1.5rem;
+    }
+
+    .search {
+        width: 100%;
+        padding: 1rem;
     }
 
     .home {
@@ -845,7 +857,7 @@ nav.scrolled {
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size:100%;
     }
 
     .slider {
@@ -858,11 +870,11 @@ nav.scrolled {
         position: relative;
         top: -3rem;
         right: auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         max-width: 270px;
         height: 250px;
-        object-fit: contain;
     }
 
     .home__right img {
