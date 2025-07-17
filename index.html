@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nill Shop</title>
+    <!--
+    **************************
+     Custom Style
+    **************************
+    -->
+    <link rel="stylesheet" href="style.css">
+    <!--
+    **************************
+     Custom Font
+    **************************
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--
+    **************************
+      Icons
+    **************************
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--
+    **************************
+      HEADER
+    **************************
+    -->
+    <header>
+        <nav>
+            <div class="nav__container">
+                <a href="#" class="logo"><span>Nill</span> Shop</a>
+
+                <input type="search" class="search" placeholder="Search...">
+
+                <div class="nav__left">
+                    <div class="nav__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="toggle">
+                        <button id="toggle__mode"><i class="bi bi-brightness-low-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Category</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#question">Question</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+    **************************
+     HOME SECTION
+    **************************
+    -->
+    <section class="home section" id="home">
+        <div class="home__container">
+            <div class="home__left">
+                <h3>Trending item</h3>
+                <h1>Women's latest fashion sale</h1>
+                <h3>srarting at $25.00!</h3>
+                <button class="btn"><a href="#">Shop Now</a></button>
+            </div>
+
+            <div class="slider">
+                <div class="home__right">
+                    <img src="assets/clothes-1.png" alt="Women's clothes" class="active">
+                    <img src="assets/clothes-2.png" alt="Women's clothes">
+                    <img src="assets/clothes-3.png" alt="Women's clothes">
+                </div>
+                <div class="images">
+                    <img src="assets/clothes-1.png" alt="Women's clothes" class="active" onclick="slide(0)">
+                    <img src="assets/clothes-2.png" alt="Women's clothes" onclick="slide(1)">
+                    <img src="assets/clothes-3.png" alt="Women's clothes" onclick="slide(2)">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+    **************************
+      CATEGORIES
+    **************************
+    -->
+    <section class="caategories section" id="categories">
+        <div class="head__content">
+            <h1>Categories</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing dolor sit amet consectetur adipisicing
+                elit. Nihil elit. Repellendus odio aliquid commodi.</p>
+        </div>
+        <div class="categories__container section`">
+            <div class="category__card">
+                <div class="card">
+                    <img src="assets/bag-1.png" alt="Bag">
+                    <h1>Category 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure!</p>
+                </div>
+            </div>
+
+            <div class="category__card">
+                <div class="card">
+                    <img src="assets/shoes-1.png" alt="Women's dress">
+                    <h1>Category 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure!</p>
+                </div>
+            </div>
+
+            <div class="category__card">
+                <div class="card">
+                    <img src="assets/clothes-4.png" alt="Women's dress">
+                    <h1>Category 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure!</p>
+                </div>
+            </div>
+
+            <div class="category__card">
+                <div class="card">
+                    <img src="assets/watch-1.png" alt="Women's dress">
+                    <h1>Category 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+    **************************
+     PRODUCTS
+    **************************
+    -->
+    <section class="products__container section" id="products">
+        <div class="head__content">
+            <h1>Products</h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a explicabo nihil velit adipisci?</p>
+        </div>
+
+        <div class="product__container">
+            <div class="pro__card__container">
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/clothes-5.png" alt="">
+                        <div class="pro__info">
+                            <h1>49$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/clothes-6.png" alt="">
+                        <div class="pro__info">
+                            <h1>29$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/shoes-2.png" alt="">
+                        <div class="pro__info">
+                            <h1>39$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/watch-2.png" alt="">
+                        <div class="pro__info">
+                            <h1>229$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/watch-3.png" alt="">
+                        <div class="pro__info">
+                            <h1>350$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/shoes-3.png" alt="">
+                        <div class="pro__info">
+                            <h1>199$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/bag-2.png" alt="">
+                        <div class="pro__info">
+                            <h1>119$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro__cards">
+                    <div class="pro__card">
+                        <img src="assets/watch-4.png" alt="">
+                        <div class="pro__info">
+                            <h1>459$</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="btn"><i class="bi bi-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    **************************
+      CATALOG
+    **************************
+    -->
+    <section class="filter section" id="catalog">
+        <div class="head__content">
+            <h1>Catalog!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam inventore minima nulla maxime
+                nesciunt nisi quibusdam provident pariatur!</p>
+        </div>
+        <div class="filter__btn">
+            <button class="btn" data-category="all">All</button>
+            <button class="btn" data-category="Shoes">Shoes</button>
+            <button class="btn" data-category="Bag">Bag</button>
+            <button class="btn" data-category="Clothes">Clothes</button>
+            <button class="btn" data-category="Watch">Watch</button>
+        </div>
+        <div class="filter__container section">
+            <div class="filter__cards" data-name="Bag">
+                <div class="filter__card">
+                    <img src="assets/bag-3.png" alt="Bag">
+                    <div class="filter__info">
+                        <h1>99$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Shoes">
+                <div class="filter__card">
+                    <img src="assets/shoes-4.png" alt="Sneakers">
+                    <div class="filter__info">
+                        <h1>69$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Watch">
+                <div class="filter__card">
+                    <img src="assets/watch-5.png" alt="Watch">
+                    <div class="filter__info">
+                        <h1>799$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Bag">
+                <div class="filter__card">
+                    <img src="assets/bag-4.png" alt="Bag">
+                    <div class="filter__info">
+                        <h1>399$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Watch">
+                <div class="filter__card">
+                    <img src="assets/watch-6.png" alt="Watch">
+                    <div class="filter__info">
+                        <h1>159$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Shoes">
+                <div class="filter__card">
+                    <img src="assets/shoes-5.png" alt="Sneakers">
+                    <div class="filter__info">
+                        <h1>459$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Clothes">
+                <div class="filter__card">
+                    <img src="assets/clothes-7.png" alt="Clothes">
+                    <div class="filter__info">
+                        <h1>39$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__cards" data-name="Clothes">
+                <div class="filter__card">
+                    <img src="assets/clothes-8.png" alt="Clothes">
+                    <div class="filter__info">
+                        <h1>69$</h1>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit!</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <button class="btn"><i class="bi bi-bag"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    **************************
+      QUESTION
+    **************************
+    -->
+    <section class="Questions section" id="question">
+        <div class="head__content">
+            <h1>Questions?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda nobis deserunt. Perferendis,
+                minima possimus. Perspiciatis.</p>
+        </div>
+
+        <div class="question__container section">
+            <div class="question__item">
+                <div class="question__box">
+                    <div class="question__header">
+                        <h1>question 1</h1>
+                        <i class="bi bi-plus question__icon"></i>
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi at exercitationem
+                            dolorem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question__item">
+                <div class="question__box">
+                    <div class="question__header">
+                        <h1>question 2:</h1>
+                        <i class="bi bi-plus question__icon"></i>
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi at exercitationem
+                            dolorem. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question__item">
+                <div class="question__box">
+                    <div class="question__header">
+                        <h1>question 3:</h1>
+                        <i class="bi bi-plus question__icon"></i>
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question__item">
+                <div class="question__box">
+                    <div class="question__header">
+                        <h1>question 4:</h1>
+                        <i class="bi bi-plus question__icon"></i>
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi at exercitationem
+                            dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos adipisci
+                            porro repellat consectetur veniam, eveniet illum optio cumque at.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question__item">
+                <div class="question__box">
+                    <div class="question__header">
+                        <h1>question 5:</h1>
+                        <i class="bi bi-plus question__icon"></i>
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi at exercitationem
+                            dolorem. Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question__item">
+                <div class="question__box">
+                    <div class="question__header">
+                        <h1>question 6:</h1>
+                        <i class="bi bi-plus question__icon"></i>
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi at exercitationem
+                            dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, illo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    **************************
+      FOOTER
+    **************************
+    -->
+    <footer class="footer section" id="footer">
+        <div class="footer__container">
+            <div class="footer__coulmn">
+                <h3>Quick Links</h3>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> Home</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> Categories</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> Products</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> Catalog!</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> Questions</a></p>
+            </div>
+
+            <div class="footer__coulmn">
+                <h3>Extra Links</h3>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> My Order</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> My Wishlist</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> My Account</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> My Favorite</a></p>
+                <p><a href="#"><i class="bi bi-arrow-right"></i> Terms of Users</a></p>
+            </div>
+
+            <div class="footer__coulmn">
+                <h3>Social Links</h3>
+                <p><a href="#"><i class="bi bi-facebook"></i> Facebook</a></p>
+                <p><a href="#"><i class="bi bi-twitter-x"></i> X</a></p>
+                <p><a href="#"><i class="bi bi-instagram"></i> Instagram</a></p>
+                <p><a href="#"><i class="bi bi-linkedin"></i> Linkedin</a></p>
+                <p><a href="#"><i class="bi bi-pinterest"></i> Pinterest</a></p>
+            </div>
+
+            <div class="footer__coulmn">
+                <h3>Newsletter</h3>
+                <p><a href="#">Subscribe For Latest Updates</a></p>
+                <input type="email" placeholder="enter your email...">
+                <button class="btn">Subscribe</button>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; Created By NillCode | All Rights Resevred</p>
+        </div>
+    </footer>
+
+    <!--
+    **************************
+      LOADING
+    **************************
+    -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+
+
+    <!--
+    *************************************
+      Scroll 
+    *************************************
+    -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!--
+    **************************
+     Custom Js
+    **************************
+    -->
+    <script src="script.js"></script>
+</body>
+
+</html>
